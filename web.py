@@ -73,9 +73,6 @@ def do_upload():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "image", type=str, nargs="+", help="Path to input image(s) or folder."
-    )
-    parser.add_argument(
         "--device",
         default="cuda:0",
         type=str,
